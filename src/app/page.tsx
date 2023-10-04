@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Gallery } from "react-grid-gallery";
 import Toggle from "../components/darkMode/Toggle";
 import Carousel from "../components/carousel/carousel";
+import Masonry from "../components/masonry/Masonry";
 const images = [
   {
     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
@@ -58,13 +59,16 @@ export default function Home() {
   ];
 
   return (
-    <main className="h-[100%] flex flex-col">
+    <main className="">
       {/*  <Gallery enableImageSelection={true} images={images} /> */}
-      <Toggle />
+      <Toggle />{" "}
+      <div className="p-7">
+        <Masonry />
+      </div>
       <div className="flex w-[30%] m-auto align-center">
         {" "}
         <Carousel />
-      </div>
+      </div>{" "}
     </main>
   );
 }
