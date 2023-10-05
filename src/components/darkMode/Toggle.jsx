@@ -9,6 +9,7 @@ export default function DarkModeToggle() {
       checked={isDark}
       onChange={({ target }) => setIsDark(target.checked)}
       aria-label="Dark mode toggle"
+      className="toggle"
     />
   );
 }

@@ -2,8 +2,11 @@
 
 import gsap from "gsap";
 import "./style.css";
-import { createRef, useEffect, useRef, useState } from "react";
-
+import { createRef, useEffect, useMemo, useRef, useState } from "react";
+import Toggle from "../darkMode/Toggle";
+import { useMediaQuery } from "react-responsive";
+import createPersistedState from "use-persisted-state";
+import { useColorScheme } from "../darkMode/Remember";
 /*--------------------
 Items
 --------------------*/
@@ -41,7 +44,7 @@ export default function Menu() {
   const items = [
     {
       name: "About",
-      color: "#b9b6b6",
+      color: "#FAFAFA",
       href: "#",
     },
     {
@@ -67,6 +70,8 @@ export default function Menu() {
   const $indicator2 = useRef();
   const $items = useRef(items.map(createRef));
   const [active, setActive] = useState(0);
+
+  const { value, setIsDark } = useColorScheme();
 
   const animate = () => {
     const menuOffset = $root.current.getBoundingClientRect();
@@ -94,6 +99,7 @@ export default function Menu() {
   };
 
   useEffect(() => {
+    console.log(value);
     animate();
     window.addEventListener("resize", animate);
 
@@ -106,21 +112,83 @@ export default function Menu() {
     <div ref={$root} className="menu  ">
       {items.map((item, index) => (
         <a
+          onClick={() => {}}
           key={item.name}
           ref={$items.current[index]}
           className={`item  sm:flex hidden ${active === index ? "active" : ""}`}
           onMouseEnter={() => {
             setActive(index);
+            console.log(value);
           }}
           href={item.href}
         >
           {item.name}
         </a>
       ))}{" "}
+      <div className="relative flex">
+        {" "}
+        <div className="scritta">
+          {value === undefined ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+          ) : value === false ? (
+            <svg
+              onClick={() => {
+                console.log(value);
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              />
+            </svg>
+          )}
+        </div>
+        <Toggle />
+      </div>
       <div className="sm:hidden flex flex-1 justify-end toggle">
         {toggle && (
           <>
-            <span v-show="open" onClick={() => setToggle(!toggle)}>
+            <span
+              v-show="open"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5"
@@ -128,9 +196,9 @@ export default function Menu() {
                 fill="currentColor"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </span>
@@ -138,18 +206,23 @@ export default function Menu() {
         )}
         {!toggle && (
           <>
-            <span v-show="!open" onClick={() => setToggle(!toggle)}>
+            <span
+              v-show="!open"
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M4 6h16M4 12h16m-7 6h7"
                 />
               </svg>
@@ -180,7 +253,7 @@ export default function Menu() {
             ))}
           </ul>
         </div>
-      </div>
+      </div>{" "}
       <div ref={$indicator1} className="indicator" />
       <div ref={$indicator2} className="indicator" />
     </div>

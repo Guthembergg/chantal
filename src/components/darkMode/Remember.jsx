@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import createPersistedState from "use-persisted-state";
 const useColorSchemeState = createPersistedState("colorScheme");
@@ -11,9 +11,9 @@ export function useColorScheme() {
     undefined
   );
 
-  const [isDark, setIsDark] = useColorSchemeState(true);
+  const [isDark, setIsDark] = useState(true);
   const value = useMemo(
-    () => (isDark === undefined ? !!systemPrefersDark : isDark),
+    () => (JSON.parse(isDark) === undefined ? !!systemPrefersDark : isDark),
     [isDark, systemPrefersDark]
   );
 

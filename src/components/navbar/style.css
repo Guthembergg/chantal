@@ -17,7 +17,6 @@ body {
 
   max-width: 100%;
 
-  border-bottom: 1px solid #6f6e6efc;
   height: 70px;
   @media (max-width: 650px) {
     flex-direction: column;
@@ -39,7 +38,7 @@ body {
     margin: 0px;
 
     &.active {
-      color: #fff;
+      color: #4b4a4a;
 
       font-weight: bolder;
     }
@@ -50,7 +49,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 30px;
+
+    border-bottom: 2px solid black;
   }
 }
 body.dark {
@@ -69,4 +69,12 @@ body.dark {
 }
 .toggle {
   width: 20px !important;
+}
+.toggle {
+  opacity: 0 !important;
+}
+.scritta {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
