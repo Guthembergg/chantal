@@ -3,7 +3,7 @@ import Toggle from "react-toggle";
 import { useColorScheme } from "./Remember";
 import "react-toggle/style.css";
 export default function DarkModeToggle() {
-  const { isDark, setIsDark } = useColorScheme();
+  const { isDark, setIsDark } = useColorScheme(false);
   return (
     <Toggle
       checked={isDark}

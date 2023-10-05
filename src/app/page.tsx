@@ -67,7 +67,7 @@ export default function Home() {
       {/*    <Toggle />{" "}*/}
       <div className="p-[10%] pt-10">
         <div className="flex justify-center pb-10">
-          <h1 className="text-slate-50 text-4xl title">Chantal Stanzione</h1>
+          <h1 className=" text-4xl title">Chantal Stanzione</h1>
         </div>{" "}
         <Toggle />
         <Masonry />

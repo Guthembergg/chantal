@@ -1,14 +1,3 @@
-body.dark {
-  background-color: #1f2023;
-  --color-foreground: #efefef;
-  .menu {
-    color: #e1e1e1;
-    border-bottom: 1px solid #eeeeee49;
-  }
-  .item {
-    color: white !important;
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -62,5 +51,19 @@ body {
     left: 0;
     z-index: -1;
     border-radius: 30px;
+  }
+}
+body.dark {
+  background-color: #1f2023;
+  --color-foreground: #efefef;
+  .menu {
+    color: #e1e1e1;
+    border-bottom: 1px solid #eeeeee49;
+  }
+  .item {
+    color: white !important;
+  }
+  .title {
+    color: rgb(255, 255, 255) !important;
   }
 }
