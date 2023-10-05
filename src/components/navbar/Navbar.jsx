@@ -209,7 +209,7 @@ export default function Menu() {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins text-xl cursor-pointer text-[16px] p-1 ${
+                className={`font-thin text-xl cursor-pointer text-[16px] p-1 ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
