@@ -66,15 +66,13 @@ export default function Home() {
       {/*  <Gallery enableImageSelection={true} images={images} /> */}
       {/*    <Toggle />{" "}*/}
       <div className="p-[10%] pt-10">
-        <div className="flex justify-center pb-10">
+        <div className="flex justify-center pb-10 mt-[10%]">
           <h1 className=" text-4xl title">Chantal Stanzione</h1>
         </div>{" "}
         <Toggle />
         <Masonry />
       </div>
-      <div className="w-[30%] m-auto">
-        <Carousel />
-      </div>
+      <div className="w-[30%] m-auto"></div>
     </main>
   );
 }
