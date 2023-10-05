@@ -1,10 +1,13 @@
 "use client";
+import React from "react";
 import "react-toggle/style.css"; // for ES6 modules
 import Image from "next/image";
 import { Gallery } from "react-grid-gallery";
 import Toggle from "../components/darkMode/Toggle";
-import Carousel from "../components/carousel/carousel";
+import Carousel from "../components/carousel/Carousel";
 import Masonry from "../components/masonry/Masonry";
+
+import Nav from "../components/navbar/Navbar";
 const images = [
   {
     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
@@ -61,14 +64,17 @@ export default function Home() {
   return (
     <main className="">
       {/*  <Gallery enableImageSelection={true} images={images} /> */}
-      <Toggle />{" "}
-      <div className="p-7">
+      {/*    <Toggle />{" "}*/}
+      <div className="p-[10%] pt-10">
+        <div className="flex justify-center pb-10">
+          <h1 className="text-slate-50 text-4xl title">Chantal Stanzione</h1>
+        </div>{" "}
+        <Toggle />
         <Masonry />
       </div>
-      <div className="flex w-[30%] m-auto align-center">
-        {" "}
+      <div className="w-[30%] m-auto">
         <Carousel />
-      </div>{" "}
+      </div>
     </main>
   );
 }
