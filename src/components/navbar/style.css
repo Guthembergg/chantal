@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
+  background-color: #fafafa;
 }
 
 .menu {
-  background-color: ;
+  background-color: #fafafa;
   width: 100%;
   display: flex;
   flex-direction: row !important;
@@ -53,11 +54,11 @@ body {
   }
 }
 body.dark {
-  background-color: #1f2023;
+  background-color: #1f2023 !important;
   .menu {
     color: #e1e1e1;
     border-bottom: 1px solid #eeeeee49;
-    background-color: #1f2023;
+    background-color: #1f2023 !important;
   }
   .item {
     color: white !important;
