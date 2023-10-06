@@ -21,7 +21,7 @@ export default function Menu() {
     {
       id: "About",
       title: "About",
-      href: "/about",
+      href: "/about/",
     },
     {
       id: "Works",
@@ -65,7 +65,7 @@ export default function Menu() {
 
   const animate = () => {
     const menuOffset = $root.current.getBoundingClientRect();
-    const activeItem = $items.current[active].current;
+    const activeItem = $items?.current[active]?.current;
     const { width, height, top, left } = activeItem.getBoundingClientRect();
 
     const settings = {
@@ -212,9 +212,7 @@ export default function Menu() {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a className="" href={nav.href}>
-                  {nav.title}
-                </a>
+                <a href={nav.href}>{nav.title}</a>
               </li>
             ))}
           </ul>
