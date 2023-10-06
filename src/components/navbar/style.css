@@ -69,13 +69,13 @@ body.dark {
     color: rgb(255, 255, 255) !important;
   }
   .item {
-    background-color: #1f2023;
+    background-color: trasparent;
   }
   .indicator {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
     background-color: rgba(0, 0, 0, 0) !important;
     border-bottom: 2px solid rgb(255, 255, 255);
   }
@@ -126,4 +126,9 @@ body.dark {
   .indicator {
     display: none !important;
   }
+}
+.activePage {
+  color: #6766687e !important;
+  font-weight: 500;
+  font-size: 17px !important;
 }

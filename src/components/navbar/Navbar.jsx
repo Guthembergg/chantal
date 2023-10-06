@@ -45,23 +45,23 @@ export default function Menu() {
     {
       name: "About",
       color: "#FAFAFA",
-      href: "#",
+      href: "/about",
     },
     {
       name: "Works",
       color: "#FAFAFA",
-      href: "#",
+      href: "/",
     },
 
     {
       name: "Experience",
       color: "#FAFAFA",
-      href: "#",
+      href: "/experience",
     },
     {
       name: "Contacts",
       color: "#FAFAFA",
-      href: "#",
+      href: "/contacts",
     },
   ];
 
@@ -70,6 +70,7 @@ export default function Menu() {
   const $indicator2 = useRef();
   const $items = useRef(items.map(createRef));
   const [active, setActive] = useState(0);
+  const [page, setPage] = useState(0);
 
   const { value, setIsDark } = useColorScheme();
 
@@ -99,6 +100,13 @@ export default function Menu() {
   };
 
   useEffect(() => {
+    if (window.location.pathname === "/") {
+      setPage(1);
+    } else if (window.location.pathname === "/about") {
+      setPage(0);
+    } else if (window.location.pathname === "/contacts") {
+      setPage(3);
+    }
     console.log(value);
     animate();
     window.addEventListener("resize", animate);
@@ -115,10 +123,11 @@ export default function Menu() {
           onClick={() => {}}
           key={item.name}
           ref={$items.current[index]}
-          className={`item  sm:flex hidden ${active === index ? "active" : ""}`}
+          className={`item  sm:flex hidden ${
+            active === index ? "active" : ""
+          } ${page === index ? "activePage" : ""}`}
           onMouseEnter={() => {
             setActive(index);
-            console.log(value);
           }}
           href={item.href}
         >
@@ -223,7 +232,6 @@ export default function Menu() {
         </div>
       </div>{" "}
       <div ref={$indicator1} className="indicator" />
-      <div ref={$indicator2} className="indicator" />
     </div>
   );
 }

@@ -1,0 +1,38 @@
+.person {
+  width: 100% !important;
+}
+@media (max-width: 1100px) {
+  .person {
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.translateRight {
+  animation: fly-ball 2s;
+}
+@keyframes fly-ball {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.translateLeft {
+  animation: fly-ball2 2s;
+}
+@keyframes fly-ball2 {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
