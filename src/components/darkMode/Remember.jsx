@@ -11,7 +11,7 @@ export function useColorScheme() {
     undefined
   );
 
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const value = useMemo(
     () => (JSON.parse(isDark) === undefined ? !!systemPrefersDark : isDark),
     [isDark, systemPrefersDark]
