@@ -148,7 +148,7 @@ export default function Menu() {
         </div>
         <Toggle />
       </div>
-      <div className="sm:hidden flex flex-1 justify-end ">
+      <div className="sm:hidden flex flex-1 justify-end allToggle">
         {toggle && (
           <>
             <span

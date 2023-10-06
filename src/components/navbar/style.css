@@ -107,22 +107,18 @@ body.dark {
 @supports (background: -webkit-named-image(i)) {
   .menu {
     display: flex;
-    padding-right: 150px;
-    justify-content: center;
-    padding: 0;
+
+    justify-content: space-around;
+
     width: 100%;
   }
-  .item {
-    padding-right: 200px;
-  }
-  .item:first-child {
-    padding-left: 200px;
-  }
+
   body {
     background-color: rgb(250, 250, 250) !important;
   }
   .scritta,
-  .allToggle {
+  .allToggle,
+  .indicator {
     display: none !important;
   }
 }
