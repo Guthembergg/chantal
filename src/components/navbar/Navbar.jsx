@@ -7,6 +7,7 @@ import Toggle from "../darkMode/Toggle";
 import { useMediaQuery } from "react-responsive";
 import createPersistedState from "use-persisted-state";
 import { useColorScheme } from "../darkMode/Remember";
+import Link from "next/link";
 /*--------------------
 Items
 --------------------*/
@@ -65,7 +66,7 @@ export default function Menu() {
 
   const animate = () => {
     const menuOffset = $root.current.getBoundingClientRect();
-    const activeItem = $items?.current[active]?.current;
+    const activeItem = $items.current[active].current;
     const { width, height, top, left } = activeItem.getBoundingClientRect();
 
     const settings = {
@@ -210,9 +211,8 @@ export default function Menu() {
                 className={`font-thin text-xl cursor-pointer text-[16px] p-1 ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
               >
-                <a href={nav.href}>{nav.title}</a>
+                <Link href={nav.href}>{nav.title}</Link>
               </li>
             ))}
           </ul>
