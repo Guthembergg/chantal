@@ -39,8 +39,6 @@ body {
 
     &.active {
       color: #4b4a4a;
-
-      font-weight: bolder;
     }
   }
 
@@ -55,7 +53,6 @@ body {
 }
 body.dark {
   background-color: #1f2023;
-  --color-foreground: #efefef;
   .menu {
     color: #e1e1e1;
     border-bottom: 1px solid #eeeeee49;
@@ -78,7 +75,7 @@ body.dark {
     border-bottom: 2px solid rgb(255, 255, 255);
   }
   .menu {
-    background-color: #1f2023;
+    background-color: #1f2023 !important;
   }
   .sidebar {
     background-color: #4b4a4a;
@@ -104,4 +101,28 @@ body.dark {
 }
 .title {
   font-weight: 200;
+}
+
+/* safari */
+@supports (background: -webkit-named-image(i)) {
+  .menu {
+    display: flex;
+    padding-right: 150px;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+  .item {
+    padding-right: 200px;
+  }
+  .item:first-child {
+    padding-left: 200px;
+  }
+  body {
+    background-color: rgb(250, 250, 250) !important;
+  }
+  .scritta,
+  .allToggle {
+    display: none !important;
+  }
 }

@@ -125,7 +125,7 @@ export default function Menu() {
           {item.name}
         </a>
       ))}{" "}
-      <div className="relative flex">
+      <div className="relative flex allToggle">
         {" "}
         <div className="scritta">
           <svg
