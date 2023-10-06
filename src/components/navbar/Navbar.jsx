@@ -19,25 +19,19 @@ export default function Menu() {
 
   const navLinks = [
     {
-      id: "Home",
-      title: "Home",
-      href: "",
+      id: "About",
+      title: "About",
+      href: "/about",
     },
     {
-      id: "Portfolio",
-      title: "Portfolio",
-      href: "Portfolio",
+      id: "Works",
+      title: "Works",
+      href: "/",
     },
-    {
-      id: "Skills",
-      title: "Skills",
-      href: "Skills",
-    },
-
     {
       id: "Contacts",
       title: "Contacts",
-      href: "Contacts",
+      href: "/contacts",
     },
   ];
 
@@ -53,11 +47,6 @@ export default function Menu() {
       href: "/",
     },
 
-    {
-      name: "Experience",
-      color: "#FAFAFA",
-      href: "/experience",
-    },
     {
       name: "Contacts",
       color: "#FAFAFA",
@@ -223,7 +212,7 @@ export default function Menu() {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a className="" href={`#${nav.id}`}>
+                <a className="" href={nav.href}>
                   {nav.title}
                 </a>
               </li>

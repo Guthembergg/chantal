@@ -17,73 +17,73 @@ export default class MyWrapper extends React.Component {
       >
         <Masonry gutter="10px">
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image1.jpeg" />
+            <img src="/image1.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image2.jpeg" />
+            <img src="/image2.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image3.jpeg" />
+            <img src="/image3.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image4.jpeg" />
+            <img src="/image4.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image5.jpeg" />
+            <img src="/image5.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image6.jpeg" />
+            <img src="/image6.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image7.jpeg" />
+            <img src="/image7.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image8.jpeg" />
+            <img src="/image8.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image9.jpeg" />
+            <img src="/image9.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image10.jpeg" />
+            <img src="/image10.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image11.jpeg" />
+            <img src="/image11.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image12.jpeg" />
+            <img src="/image12.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image13.jpeg" />
+            <img src="/image13.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image14.jpeg" />
+            <img src="/image14.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image15.jpeg" />
+            <img src="/image15.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image16.jpeg" />
+            <img src="/image16.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image17.jpeg" />
+            <img src="/image17.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image18.jpeg" />
+            <img src="/image18.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image19.jpeg" />
+            <img src="/image19.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image20.jpeg" />
+            <img src="/image20.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image21.jpeg" />
+            <img src="/image21.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image22.jpeg" />
+            <img src="/image22.jpeg" className="cursor-pointer" />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image23.jpeg" />
+            <img src="/image23.jpeg" className="cursor-pointer" />
           </LightGallery>
         </Masonry>
       </ResponsiveMasonry>
