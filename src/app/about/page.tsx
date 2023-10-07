@@ -5,11 +5,11 @@ import "./style.css";
 export default function About() {
   return (
     <>
-      <main className="h-100 flex justify-center content-center flex-col">
+      <main className="h-100 flex justify-center content-center flex-col overflow-hidden">
         <div className="p-5 md:mt-0 flex justify-center content-center h-100 marginTop">
           <div className="flex justify-center about	 pt-[70px]">
-            <div className="person flex mr-7 translateLeft">
-              <img src="/person.jpg" className=" m-auto" />
+            <div className="person flex mr-7 translateLeft ">
+              <img src="/person.jpg" className=" m-auto rounded-xl" />
             </div>
             <div className="flex flex-col justify-center  w-100 translateRight ">
               <h1 className="text-[25px] text-3xl  title   font-thin mt-10  md:pb-[10px] md:mt-0 ">
