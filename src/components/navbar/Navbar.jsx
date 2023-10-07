@@ -95,7 +95,7 @@ export default function Menu() {
     } else if (window.location.pathname === "/about") {
       setPage(0);
     } else if (window.location.pathname === "/contacts") {
-      setPage(3);
+      setPage(2);
     }
     console.log(value);
     animate();
