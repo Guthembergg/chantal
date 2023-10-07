@@ -6,6 +6,7 @@ import { Gallery } from "react-grid-gallery";
 import Toggle from "../components/darkMode/Toggle";
 import Carousel from "../components/carousel/Carousel";
 import Masonry from "../components/masonry/Masonry";
+import Footer from "../components/footer/Footer";
 
 import Nav from "../components/navbar/Navbar";
 const images = [
@@ -62,7 +63,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="">
+    <main className="relative">
       {/*  <Gallery enableImageSelection={true} images={images} /> */}
       {/*    <Toggle />{" "}*/}
       <div className="p-[10%] pt-10">
@@ -73,8 +74,10 @@ export default function Home() {
         </div>{" "}
         <Toggle />
         <Masonry />
+        <div className="absolute w-100 bottom-0 left-0">
+          <Footer />
+        </div>
       </div>
-      <div className="w-[30%] m-auto"></div>
     </main>
   );
 }

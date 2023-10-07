@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Footer from "../../components/footer/Footer";
 import "./style.css";
 export default function About() {
   return (
@@ -23,6 +24,9 @@ export default function About() {
             </p>
           </div>
         </div>
+      </div>{" "}
+      <div className="absolute w-100 bottom-0 left-0">
+        <Footer />
       </div>
     </main>
   );

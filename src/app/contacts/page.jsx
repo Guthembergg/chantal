@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import Footer from "../../components/footer/Footer";
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/fb7d1c80-64db-11ee-94f4-efb6cbd494ee"; // TODO - update to the correct endpoint
 
@@ -42,7 +42,7 @@ const ContactForm = () => {
   if (submitted) {
     return (
       <>
-        <div className="pt-[200px] flex flex-col m-auto w-[200px]">
+        <div className="pt-[200px] flex flex-col m-auto w-[200px] ">
           <div className="text-2xl ">Thank you!</div>
           <div className="text-md">We will be in touch soon.</div>
         </div>
@@ -51,9 +51,9 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="pt-[200px] flex justify-center">
+    <div className="pt-[350px] flex justify-center h-[85%] ">
       <form
-        className="w-[300px]"
+        className="w-[300px] md:w-[450px]"
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}
         method="POST"
@@ -92,7 +92,10 @@ const ContactForm = () => {
             Send a message
           </button>
         </div>
-      </form>
+      </form>{" "}
+      <div className="absolute w-100 bottom-0 left-0">
+        <Footer />
+      </div>
     </div>
   );
 };
