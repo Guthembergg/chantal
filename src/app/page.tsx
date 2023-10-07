@@ -67,16 +67,16 @@ export default function Home() {
       {/*  <Gallery enableImageSelection={true} images={images} /> */}
       {/*    <Toggle />{" "}*/}
       <div className="p-[10%] pt-10">
-        <div className="flex justify-center pb-10 mt-[100px]">
+        <div className="flex justify-center pb-10 mt-[100px] ">
           <h1 className="text-[25px] md:text-4xl title font-thin">
             Chantal Stanzione
           </h1>
         </div>{" "}
         <Toggle />
-        <Masonry />
-        <div className="absolute w-100 bottom-0 left-0">
-          <Footer />
-        </div>
+        <Masonry />{" "}
+      </div>
+      <div className="absolute w-100 bottom-0 left-0">
+        <Footer />
       </div>
     </main>
   );

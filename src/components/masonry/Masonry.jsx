@@ -13,6 +13,7 @@ export default class MyWrapper extends React.Component {
   render() {
     return (
       <ResponsiveMasonry
+        className="pb-[50px]"
         columnsCountBreakPoints={{ 350: 2, 450: 3, 900: 3, 1900: 3 }}
       >
         <Masonry gutter="10px">
