@@ -19,16 +19,17 @@ export default function About() {
                 Chantal Stanzione
               </h1>
               <p className="mt-10 text-[20px]  md:text-[20px] title text-xl  text-left">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, non, deserunt tempore veritatis quae mollitia,
-                aspernatur sequi consequuntur blanditiis voluptate expedita
-                officiis tempora facere! Ullam quisquam illo facilis voluptatem
-                voluptatibus.
+                Chantal&apos;s paintings are a testament to her boundless
+                creativity and dedication. Each stroke of her brush breathes
+                life into her canvases, capturing the essence of her subjects
+                with a rare and transcendent beauty. Her work ranges from
+                exquisite portraits to evocative landscapes, all imbued with her
+                signature style.
               </p>
             </div>
           </div>{" "}
         </div>{" "}
-        <div className=" w-100 bottom-0 left-0 mt-[80px]">
+        <div className=" w-100 bottom-0 left-0 mt-[100px]">
           <Footer />
         </div>
       </main>{" "}
