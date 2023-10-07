@@ -59,10 +59,15 @@ body {
 .footer {
   background-color: rgba(250, 250, 250);
 }
-
+.textSide {
+  color: #030303 !important;
+}
 body.dark {
   background-color: #1f2023 !important;
 
+  .textSide {
+    color: #e1e1e1 !important;
+  }
   .footer {
     background-color: #1f2023 !important;
   }

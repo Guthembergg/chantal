@@ -211,18 +211,18 @@ export default function Menu() {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-[40px] right-0 mx-4 my-2 min-w-[200px] min-h-[240px] rounded-xl sidebar bg-[#e6d8b8]`}
+          } p-6 pb-0 bg-black-gradient absolute top-[40px] right-0 mx-4 my-2 min-w-[200px] min-h-[240px] rounded-xl sidebar bg-[#e6d8b8]`}
           style={{ zIndex: 1 }}
         >
-          <ul className="list-none flex justify-center font-medium items-center jus flex-1 flex-col p-0 ">
+          <ul className="list-none flex justify-center font-medium items-center jus flex-1 flex-col p-0 pb-3 m-0">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-thin text-xl cursor-pointer text-[16px] p-1 ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                className="font-thin text-xl cursor-pointer text-[16px] p-1 pb-3 pt-3"
               >
-                <Link href={nav.href}>{nav.title}</Link>
+                <Link className="textSide" href={nav.href}>
+                  {nav.title}
+                </Link>
               </li>
             ))}
           </ul>
