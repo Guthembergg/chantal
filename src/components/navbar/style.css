@@ -121,8 +121,8 @@ body.dark {
 .title {
   font-weight: 200;
 }
-a {
-  color: 030303 !important;
+.item {
+  color: black !important;
   text-decoration: none !important;
 }
 
