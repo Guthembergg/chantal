@@ -51,7 +51,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="pt-[350px] flex justify-center h-[85%] ">
+    <div className="pt-[250px] md:pt-[350px] flex justify-center h-[85%] ">
       <form
         className="w-[300px] md:w-[450px]"
         action={FORM_ENDPOINT}

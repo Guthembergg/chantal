@@ -214,7 +214,7 @@ export default function Menu() {
           } p-6 bg-black-gradient absolute top-[40px] right-0 mx-4 my-2 min-w-[200px] min-h-[240px] rounded-xl sidebar bg-[#e6d8b8]`}
           style={{ zIndex: 1 }}
         >
-          <ul className="list-none flex justify-center font-medium items-center jus flex-1 flex-col  ">
+          <ul className="list-none flex justify-center font-medium items-center jus flex-1 flex-col p-0 ">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
