@@ -53,7 +53,8 @@ const ContactForm = () => {
 
   return (
     <div className="h-100 flex justify-center">
-      <div className=" formContact">
+      <div className=" formContact flex flex-col">
+        <h2 className="mb-5 title font-thin">Leave a message</h2>
         <form
           className="w-[300px] md:w-[450px]"
           action={FORM_ENDPOINT}
