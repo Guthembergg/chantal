@@ -47,7 +47,7 @@ body {
   }
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #050505 !important;
   }
   .indicator {
