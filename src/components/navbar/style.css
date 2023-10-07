@@ -45,7 +45,9 @@ body {
       color: #4b4a4a;
     }
   }
-
+  a {
+    color: inherit;
+  }
   .indicator {
     position: absolute;
     top: 0;
