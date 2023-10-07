@@ -47,6 +47,8 @@ body {
   }
   a {
     color: inherit;
+    text-decoration: none;
+    color: #050505 !important;
   }
   .indicator {
     position: absolute;
