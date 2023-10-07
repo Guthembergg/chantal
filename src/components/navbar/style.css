@@ -173,4 +173,14 @@ body.dark {
   .indicator {
     display: none !important;
   }
+
+  .active {
+    border-bottom: 1px solid black;
+  }
+  .item {
+    padding-bottom: 5px;
+    width: 100px !important;
+    display: flex;
+    justify-content: center;
+  }
 }

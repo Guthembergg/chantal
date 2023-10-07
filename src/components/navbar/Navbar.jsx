@@ -118,7 +118,7 @@ export default function Menu() {
           onClick={() => {}}
           key={item.name}
           ref={$items.current[index]}
-          className={`item text-slate-900 sm:flex hidden ${
+          className={`item text-slate-900 font-light sm:flex hidden ${
             active === index ? "active" : ""
           } ${page === index ? "activePage" : ""}`}
           onMouseEnter={() => {
