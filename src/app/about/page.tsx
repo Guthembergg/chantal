@@ -5,8 +5,8 @@ import "./style.css";
 export default function About() {
   return (
     <main className="h-100 flex justify-center content-center">
-      <div className="p-[30px]  pt-[150px] md:pt-[50x] lg:p-[100px] flex justify-center content-center ">
-        <div className="flex justify-center pb-10 about	">
+      <div className="p-[30px]  md:pt-[50x]  flex justify-center content-center ">
+        <div className="flex justify-center about	">
           <div className="person flex mr-7 translateLeft">
             <img src="/person.jpg" className=" m-auto" />
           </div>
@@ -15,7 +15,7 @@ export default function About() {
             <h1 className="text-[25px] text-3xl  title  text-center md:text-left font-thin mt-10  md:pb-[10px] md:mt-0 ">
               Chantal Stanzione
             </h1>
-            <p className="mt-10  title text-xl  text-left">
+            <p className="mt-10 text-[20px]  md:text-[20px] title text-xl  text-left">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quibusdam, non, deserunt tempore veritatis quae mollitia,
               aspernatur sequi consequuntur blanditiis voluptate expedita

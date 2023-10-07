@@ -13,9 +13,7 @@ export default function App() {
 
       <div className="text-center pt-3 pb-3">
         © 2023 {"  "}
-        <a className="text-reset " href="https://mdbootstrap.com/">
-          Chantal stanzione
-        </a>
+        <a className="text-reset ">Chantal stanzione</a>
       </div>
     </div>
   );
