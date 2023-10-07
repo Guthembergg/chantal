@@ -117,7 +117,7 @@ export default function Menu() {
   }, [active]);
 
   return (
-    <div ref={$root} className="menu  ">
+    <div ref={$root} className="menu ">
       {items.map((item, index) => (
         <a
           onClick={() => {}}

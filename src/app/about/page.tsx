@@ -28,7 +28,7 @@ export default function About() {
             </div>
           </div>{" "}
         </div>{" "}
-        <div className=" w-100 bottom-0 left-0 mt-[50px]">
+        <div className=" w-100 bottom-0 left-0 mt-[80px]">
           <Footer />
         </div>
       </main>{" "}
