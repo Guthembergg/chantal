@@ -59,7 +59,15 @@ export default function Menu() {
   const $indicator1 = useRef();
   const $indicator2 = useRef();
   const $items = useRef(items.map(createRef));
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(
+    typeof window !== "undefined"
+      ? window.location.pathname === "/"
+        ? 1
+        : window.location.pathname === "/about"
+        ? 0
+        : 2
+      : 0
+  );
   const [page, setPage] = useState(0);
 
   const { value, setIsDark } = useColorScheme();
@@ -90,14 +98,16 @@ export default function Menu() {
   };
 
   useEffect(() => {
-    if (window.location.pathname === "/") {
-      setPage(1);
-    } else if (window.location.pathname === "/about") {
-      setPage(0);
-    } else if (window.location.pathname === "/contacts") {
-      setPage(2);
+    if (typeof window !== "undefined") {
+      if (window.location.pathname === "/") {
+        setPage(1);
+      } else if (window.location.pathname === "/about") {
+        setPage(0);
+      } else if (window.location.pathname === "/contacts") {
+        setPage(2);
+      }
     }
-    console.log(value);
+
     animate();
     window.addEventListener("resize", animate);
 
