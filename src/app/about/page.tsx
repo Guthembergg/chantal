@@ -5,7 +5,7 @@ import "./style.css";
 export default function About() {
   return (
     <>
-      <main className="h-100 flex justify-center content-center flex-col overflow-hidden">
+      <main className="h-100 flex justify-center content-center flex-col overflow-x-hidden">
         <div className="p-5 md:mt-0 flex justify-center content-center h-100 marginTop">
           <div className="flex justify-center about	 pt-[70px]">
             <div className="person flex mr-7 translateLeft ">
