@@ -33,7 +33,7 @@ body {
     transition: font-weight 0.3s ease;
 
     text-decoration: none;
-    color: #050505;
+    color: #050505 !important;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-size: 12px;
@@ -133,7 +133,7 @@ body.dark {
   }
 
   body {
-    background-color: rgb(250, 250, 250) !important;
+    background-color: #fafafa !important;
   }
   .scritta,
   .allToggle,

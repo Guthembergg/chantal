@@ -82,18 +82,13 @@ export default function Menu() {
       y: top - menuOffset.y,
       width: width,
       height: height,
-      backgroundColor: items[active].color,
-      ease: "elastic.out(.7, .7)",
-      duration: 0.8,
+      backgroundColor: "#fafafa",
+      ease: "elastic.out(.1, .1)",
+      duration: 0.01,
     };
 
     gsap.to($indicator1.current, {
       ...settings,
-    });
-
-    gsap.to($indicator2.current, {
-      ...settings,
-      duration: 1,
     });
   };
 
@@ -229,6 +224,7 @@ export default function Menu() {
         </div>
       </div>{" "}
       <div ref={$indicator1} className="indicator" />
+      <div ref={$indicator2} className="indicator" />
     </div>
   );
 }
