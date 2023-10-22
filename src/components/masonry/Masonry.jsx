@@ -8,6 +8,9 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 // The number of columns change by resizing the window
 export default class MyWrapper extends React.Component {
   render() {
@@ -18,73 +21,165 @@ export default class MyWrapper extends React.Component {
       >
         <Masonry gutter="10px">
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image1.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image1.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image2.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image2.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image3.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image3.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image4.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image4.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image5.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image5.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image6.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image6.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image7.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image7.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image8.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image8.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image9.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image9.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image10.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image10.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image11.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image11.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image12.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image12.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image13.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image13.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image14.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image14.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image15.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image15.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image16.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image16.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image17.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image17.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image18.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image18.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image19.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image19.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image20.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image20.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image21.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image21.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image22.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image22.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
           <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-            <img src="/image23.jpeg" className="cursor-pointer" />
+            <LazyLoadImage
+              effect="blur"
+              src="/image23.jpeg"
+              className="cursor-pointer"
+            />
           </LightGallery>
         </Masonry>
       </ResponsiveMasonry>
